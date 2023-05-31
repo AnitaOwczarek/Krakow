@@ -1,0 +1,590 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Roboto+Condensed:ital@0;1&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Roboto Condensed', sans-serif;
+    /* display: block; */
+    /* background-color: rgb(111, 110, 110); */
+    overflow-x: hidden;
+}
+
+.menu{
+    position: fixed;
+    height: 75px;
+    width: 100%;
+    z-index: 10;
+    background-color: rgb(68, 68, 68, 0);
+    color: white;
+}
+
+/* Navigation */
+.container-nav{
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+.menu-items{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: row;
+    list-style: none;
+    padding: 20px 0;
+}
+
+.fa-bars, .fa-xmark{
+    display: none;
+}
+
+.menu-link{
+    font-size: 20px;  
+}
+
+li:hover{
+    cursor: pointer;
+    color: rgb(198, 196, 196);
+}
+
+.barIcon{
+    display: none;
+}
+
+
+/* Amazing Places */
+.ImgAmazingPlaces{
+    position: relative;
+    width: 100vw;
+    height: 25vw;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: url(img/amazingPlaces.jpg);
+    background-size: cover;
+    background-position: bottom;
+}
+
+h2{
+    width: 100%;
+    text-align: center;
+    color: white;
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 4vw;
+    letter-spacing: 2px;
+}
+
+.listPlaces{
+    width: 100vw;
+    height: 38vw; 
+    /* 42 */
+}
+.firstPlaces,
+.secondPlaces,
+.fourthPlaces,
+.thirdPlaces,
+.fifthPlaces{
+    display: flex; 
+    flex-direction: row;
+    color: rgb(210, 208, 208);
+    background: #232526;
+}
+.firstPlaces{
+    background: linear-gradient(to top, #232526, #414345);
+}
+.secondPlaces{
+    position: relative;
+}
+.imgFirstPlacesCantainer,
+.imgSecondPlacesContainer,
+.imgFourthPlacesContainer,
+.imgFifthPlacesContainer{
+    width: 50vw;
+}
+.numberPlaces{
+    position: absolute;
+    top: 20%;
+    left: 13%;
+    opacity: 0.1;
+    font-size: 10vw;
+    text-shadow: 2px 2px 20px rgb(253, 250, 250);
+}
+.descriptionFirstPlaces, 
+.descriptionSecondPlaces,
+.descriptionFourthPlaces,
+.descriptionThirdPlaces,
+.descriptionFifthPlaces{
+    position: relative;
+    width: 50vw;
+    padding: 0 8% 8% 8%;
+}
+.imgFirstPlaces,
+.imgSecondPlaces,
+.imgFourthPlaces,
+.imgFifthPlaces{
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-size: cover;
+    background-position: center;
+    max-width: 100%;
+    height: auto;
+    height: 18vw;
+    width: 26vw;
+}
+.imgFirstPlaces{  
+    background-image: url(img/places-firstPlace.jpg);
+}
+.imgSecondPlaces{
+    background-image: url(img/places-secondPlace.jpg);
+}
+.imgFourthPlaces{
+    background-image: url(img/places-fourthPlace.jpg);
+}
+.imgThirdPlacesContainer{
+    width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    margin: 0;
+    padding: 0;
+}
+.imgThirdPlaces{
+    background-position: center;
+    background-size: cover;
+    height: 14vw;
+    width: 14vw;
+    margin: 0.7vw;
+    box-shadow: 5px 5px 10px #555;
+}
+.img1ThirdPlaces{
+    background-image: url(img/places-thirdPlace1.jpg);
+}
+.img2ThirdPlaces{
+    background-image: url(img/places-thirdPlace2.jpg);
+}
+.img3ThirdPlaces{
+    background-image: url(img/places-thirdPlace3.jpg);
+}
+.img4ThirdPlaces{
+    background-image: url(img/places-thirdPlace4.jpg);
+}
+.imgFifthPlaces{
+    background-image: url(img/places-fifthPlace.jpg);
+}
+
+.titlePlaces{
+    text-align: left;
+    font-size: 2vw;
+    padding: 20% 0% 5% 0%;
+    letter-spacing: 1px;
+}
+.textPlaces{
+    text-align: justify;
+    line-height: 170%;
+    padding: 0;
+    font-size:  1.2vw;
+    padding-bottom: 3%;
+}
+
+.readMoreContainer{
+    opacity: 0.5;
+}
+.readMoreContainer:hover{
+    cursor: pointer;
+    font-size: 110%;
+    opacity: 1;
+    width: 40%;
+}
+.readMore{
+    color: rgb(199, 175, 69);
+}
+.iconReadMore{
+    color:rgb(199, 175, 69);
+    padding-left: 1.5%;
+}
+/* Restaurant */
+.restaurantBackgound{
+    background: linear-gradient(to top, #232526, #414345);
+}
+.imgRestaurant{
+    position: relative;
+    width: 100vw;
+    height: 30vw;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: url(img/restaurant.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.restaurantContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+.listRestaurant{
+    height: 25vw;
+    width: 18vw;
+    background-color: whitesmoke;
+    margin: 10px;
+    box-shadow: 5px 5px 10px #555;
+}
+.imgFirstRestaurant,
+.imgSecondRestaurant,
+.imgThirdRestaurant,
+.imgFourthRestaurant,
+.imgFifthRestaurant,
+.imgSixthRestaurant{
+    position: relative;
+    /* background-image: url(img/PodWawelem.jpg); */
+    background-size: cover;
+    background-position: center;
+    height: 50%;
+    width: 100%;
+}
+.imgFirstRestaurant{
+    background-image: url(img/restaurant-podWawelem.jpg);
+}
+.imgThirdRestaurant{
+    background-image: url(img/restaurant-kuchniaUDoroty.jpg);
+}
+.imgSecondRestaurant{
+    background-image: url(img/restaurant-szaloneWidelcejpg.jpg);
+}
+.imgFourthRestaurant{
+    background-image: url(img/restaurant-gardenRestaurant.jpg);
+}
+.imgFifthRestaurant{
+    background-image: url(img/restaurant-byTheWay.jpg);
+}
+.imgSixthRestaurant{
+    background-image: url(img/restaurant-pierwszyStopien.jpg);
+}
+.restaurantName{
+    position: absolute;
+    bottom: 0%;
+    left:0%;
+    color: white;
+    font-size: 3vw;
+}
+.starsRestaurant {
+    display: flex;
+    align-items: center;
+    height: 8%;
+    letter-spacing: 0.5vw;
+    margin-left: 0.5vw;
+}
+.fontStar{
+    font-size: 1vw;
+}
+.fontLocation{
+    margin: 0.5vw;
+    margin: 0 0.5vw 0 0.5vw;
+}
+.fontHours{
+    font-size: 12px;
+    margin: 0 0.5vw 0 0.5vw;
+}
+.locationRestaurant,
+.openHoursContainer,
+.opinionRestaurantContainer{
+    display: flex;
+    align-items: center;
+    height: 10%;   
+}
+
+.location,
+.openHours,
+.opinionWord{
+    font-size: 1.2vw;
+}
+
+.opinionNumber{
+    margin: 0 0.5vw 0 0.5vw;
+    padding: 2%;
+    background-color: rgb(61, 101, 223);
+    border-radius: 10%;
+    color:white;
+    font-size: 1.5vw;
+}
+.btnRestaurantContainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 12%;
+}
+.btnShowMore{
+    height: 60%;
+    width: 60%;
+    border-radius: 5px;
+    font-size: 1.5vw;
+    color: black;
+    /* background-color: #878787; */
+        /* background-color: #878787; */
+    /* background-color:  rgb(68, 68, 68, 0.8); */
+    background-color: whitesmoke;
+    box-shadow: 2px 1px 10px #868484;
+    border: none;
+}
+.btnShowMore:hover{
+    background-color: #e0dddd;
+    box-shadow: 2px 1px 10px #868484;
+    cursor: pointer;
+} 
+
+/* Hotels */
+.imgHotels{
+    position: relative;
+    width: 100vw;
+    height: 30vw;
+    background-image: url(img/hotels.jpg);
+    background-position: center;
+    background-size: cover;
+    color: white;
+}
+.hotelsList{
+    position: relative;
+    width: 100%;
+    height: 30vw;
+    background: linear-gradient(to top, #232526, #414345);
+    padding-top: 3vw;
+    padding-bottom: 3vw;
+}
+.showHotel{
+    overflow: hidden;
+    position: relative;
+    height: 100%;
+    width: 80%;
+    margin: auto;
+}
+.allHotel{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+    top: 0px;
+    
+}
+.showHotel1{
+    background-image: url(img/hotels-firstHotel.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    right: 0%;
+    
+}
+.showHotel2{
+    background-image: url(img/hotels-secondHotel.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    right: 0%;
+
+}
+.showHotel3{
+    background-image: url(img/hotels-thirdHotel.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    right: 0%;
+}
+.showHotel4{
+    background-image: url(img/hotels-fourthHote.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    right: 0%;
+}
+.zIndeksHotel{
+    z-index: 3;
+}
+
+.iconNext1{
+    position: absolute;
+    top: 35%;
+    left: 2%;
+    transform: translate(0% , -50%);
+    rotate: 180deg;
+    font-size: 4vw;
+    color: #575555;
+}
+.iconNext2{
+    position: absolute;
+    top: 50%;
+    right: 2%;
+    transform: translate(0% , -50%);
+    font-size: 4vw;
+    color: #575555;
+}
+.iconNext1:hover,
+.iconNext2:hover{
+    cursor: pointer;
+    color: #9c9a9a;
+}
+.iconNext1:active,
+.iconNext2:active{
+    cursor: pointer;
+    font-size: 4.1vw;
+}
+.h2Hotel{
+    top:30%;
+}
+.btnHotel{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% ,0%);
+    width: 12vw;
+    height: 5vw;
+    background-color:  rgb(68, 68, 68, 0.8);
+    color: white;
+    font-size: 1.5vw;
+    border-radius: 5px;
+}
+.btnHotel:hover{
+    background-color:rgba(101, 99, 99, 0.8);
+}
+
+.menuHamburger{
+    height: 60px;
+    width: 100%;
+    z-index: 10;
+    background-color: rgb(68, 68, 68, 0.8);
+    color: white;
+
+}
+
+.imgNightlife{
+    position: relative;
+    background-image: url(img/nightLife.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 30vw;
+    width: 100%;
+}
+
+
+
+
+@media screen and (max-width: 900px) {
+    .menu-items{
+        align-items: center;
+        flex-direction: column;
+        height: 100vh;
+        justify-content: space-around;
+        padding: 0;
+    }
+    
+    .menuHamburgerHeight{
+        height: auto;
+        
+    }
+    .windowSrollY{
+        overflow-y: hidden;
+    }
+
+    .fa-bars{
+        display: block;
+    }
+    .fa-xmark{
+        display: block;
+    }
+
+    .elementNavVisibility{
+        height: 100px;
+    }
+
+    .elementVisibility{
+        visibility: hidden;
+    }
+
+    .fa-solid {
+        position: absolute;
+        top: 1rem;
+        right: 2rem;
+        font-size: 30px;
+        cursor: pointer;
+    }
+
+    /* AmazingPlaceSection */
+    .ImgAmazingPlaces{
+        height: 30vw;
+    }
+}
+
+
+
+
+/* obrazy */
+/* https://cdn.galleries.smcloud.net/t/galleries/gf-qyEb-9TrN-3WGc_zakrzowek-1920x1080-nocrop.jpg */
+/* https://bi.im-g.pl/im/82/c7/17/z24935554AMP,Zalew-Zakrzowek-w-Krakowie--zdjecie-ilustracyjne-.jpg */
+/* https://d-art.ppstatic.pl/kadry/k/r/01/5b/5247dd074670d_o_full.jpg */
+/* https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTdR-MZGpZkXRzv1sfPSsmacZW-AK7jHS3XwyH4tgVvOFGmshhfdGheNwYluVPlpSZQwMM&usqp=CAU */
+
+/* https://podwawelem.eu/images/slideshow/sl-planty.jpg */
+/* https://media-cdn.tripadvisor.com/media/photo-s/0f/5b/df/44/piwnica-szalone-widelce.jpg */
+/* https://www.zwidelcem.pl/wp-content/uploads/2013/09/dorota2.jpg */
+/* https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRw1aE4aM7qnLuiYlCJ5nz235W8ZifLQKqVaHiksvMXk5JOK2wc6mEMx6XqoyjlTM4yoGo&usqp=CAU */
+/* https://pierwszystopien.pl/wp-content/uploads/2023/02/pierwszy-stopien-restauracja-w-krakowie-kazimierz-wnetrze-3.jpg */
+
+/* <!-- HTML !-->
+<button class="button-30" role="button">Button 30</button> */
+
+/* CSS */
+/* .btnShowMore {
+    height: 60%;
+    width: 60%;
+    border-radius: 5px;
+    font-size: 1.5vw;
+  align-items: center;
+  appearance: none;
+  background-color: #FCFCFD;
+  border-radius: 4px;
+  border-width: 0;
+  box-shadow: rgba(45, 35, 66, 0.4) 0 2px 4px,rgba(45, 35, 66, 0.3) 0 7px 13px -3px,#D6D6E7 0 -3px 0 inset;
+  box-sizing: border-box;
+  color: #36395A;
+  cursor: pointer;
+  display: inline-flex;
+  justify-content: center;
+  line-height: 1;
+  list-style: none;
+  overflow: hidden;
+  padding-left: 16px;
+  padding-right: 16px;
+  text-align: left;
+  text-decoration: none;
+  transition: box-shadow .15s,transform .15s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+  will-change: box-shadow,transform;
+} */
+ 
+/* .btnShowMore:focus {
+  box-shadow: #D6D6E7 0 0 0 1.5px inset, rgba(45, 35, 66, 0.4) 0 2px 4px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
+}
+
+.btnShowMore:hover {
+  box-shadow: rgba(45, 35, 66, 0.4) 0 4px 8px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
+  transform: translateY(-2px);
+}
+
+.btnShowMore:active {
+  box-shadow: #D6D6E7 0 3px 7px inset;
+  transform: translateY(2px);
+} */
+
+
+
