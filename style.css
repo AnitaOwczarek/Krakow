@@ -12,6 +12,9 @@ body{
     /* background-color: rgb(111, 110, 110); */
     overflow-x: hidden;
 }
+html{
+    scroll-behavior: smooth;
+}
 
 .menu{
     position: fixed;
@@ -40,20 +43,22 @@ body{
 .fa-bars, .fa-xmark{
     display: none;
 }
-
 .menu-link{
+    text-decoration: none;
+    color:white;
     font-size: 20px;  
 }
-
-li:hover{
+.menu-link:hover{
     cursor: pointer;
     color: rgb(198, 196, 196);
 }
-
 .barIcon{
     display: none;
 }
 
+/* a:hover{
+    text-decoration: none;
+} */
 
 /* Amazing Places */
 .ImgAmazingPlaces{
