@@ -513,7 +513,7 @@ h2{
         visibility: hidden;
     }
 
-    .fa-solid {
+    .iconNav {
         position: absolute;
         top: 1rem;
         right: 2rem;
@@ -521,11 +521,440 @@ h2{
         cursor: pointer;
     }
 
+    
+
+
+}
+@media screen and (max-width: 900px){
     /* AmazingPlaceSection */
+    .listPlaces{
+        height: 90vw;
+    }
+    .firstPlaces,
+    .fourthPlaces{
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: space-around;
+    }
+    .secondPlaces,
+    .thirdPlaces,
+    .fifthPlaces{
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    .descriptionFirstPlaces,
+    .descriptionSecondPlaces,
+    .descriptionThirdPlaces,
+    .descriptionFourthPlaces,
+    .descriptionFifthPlaces{
+        height: 50%;
+        width: 100vw;
+        padding: 5%;
+    }
+    .numberPlaces{
+        top: 20%;
+        left: 20%;
+        font-size: 17vw;
+    }
+    .titlePlaces{
+        position: absolute;
+        top:20%;
+        left: 20%;
+        padding: 0;
+        font-size: 4vw;
+    }
+    .textPlaces{
+        position: relative;
+        top: 40%;
+        width: 100vw;
+        height: 30%;
+        font-size: 2vw; 
+        padding-bottom: 0; 
+    }
+    .textPlaces > span {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        width: 80%;
+    }
+    .readMoreContainer{
+        display: flex;
+        flex-direction: row;
+        width: 80%;
+        position: absolute;
+        top: 70%;
+        left: 13.5%;
+        font-size: 1.5vw;
+    }
+    .readMoreContainer:hover{
+        cursor: pointer;
+        font-size: 100%;
+        opacity: 1;
+        width: 80%;
+    }  
+    .iconReadMore{
+        position: static;
+        padding-top: 0%;
+        font-size: 2vw;
+    }
+    .imgFirstPlacesCantainer,
+    .imgSecondPlacesContainer,
+    .imgThirdPlacesContainer,
+    .imgFourthPlacesContainer,
+    .imgFifthPlacesContainer{
+        height: 50%;
+        width: 100vw;
+    }
+    .imgFirstPlaces,
+    .imgSecondPlaces,
+    .imgFourthPlaces,
+    .imgFifthPlaces{
+        width: 60%;
+        height: 80%;
+    }
+    .imgThirdPlaces{
+        height: 40%;
+        width: 35%;
+    }
     .ImgAmazingPlaces{
         height: 30vw;
     }
+
+
+    .listRestaurant{
+        width: 45%;
+        height: 50vw;
+    }
+    .restaurantName{
+        font-size: 6vw;
+    }
+     .fontStar{
+        font-size: 2vw;
+        margin-left: 1vw;
+    }
+    .fontLocation,
+    .fontHours{
+        font-size: 2vw;
+        margin-left: 1.5vw;
+    }
+    .location,
+    .opinionNumber,
+    .opinionWord{
+        font-size: 2vw;
+        margin-left: 1.5vw;
+    }
+    .openHours{
+        font-size: 2vw;
+        margin-left: 1vw;
+    }
+    
+    .btnShowMore{
+        font-size: 2vw;
+    }
+
+    .hotelsList{
+        height: 60vw;
+    }
+    .showHotel{
+        width: 90%;
+    }
+    .h2Hotel{
+        top: 40%;
+        font-size: 6vw;
+    }
+    .btnHotel{
+        width: 16vw;
+        height: 7vw;
+        font-size: 2.5vw;
+    }
+    .iconNext1{
+        top: 45%;
+        left: 6%;
+        z-index: 20000;
+    }
+    .iconNext2{
+        top: 52%;
+        right: 6%;
+        z-index: 20000;
+    }
 }
+
+@media screen and (max-width: 700px){
+    .ImgAmazingPlaces,
+    .imgRestaurant,
+    .imgHotels,
+    .imgNightlife{
+        height: 60vw;
+    }
+    .listPlaces{
+        height: 150vw;
+    }
+  
+    .titlePlaces{
+        font-size: 6vw;
+    }
+    .textPlaces{
+        font-size: 3vw; 
+    }
+    .readMoreContainer{
+        top: 80%;
+        font-size: 3vw;
+    }
+       
+    .iconReadMore{
+        padding-top: 1%;
+        font-size: 3vw;
+    }
+    
+    .imgThirdPlaces{
+        height: 35vw;
+        width: 35vw;
+    }
+    
+
+
+    .restaurantContainer{
+        flex-direction: row;
+    }
+    .listRestaurant{
+        width: 80%;
+        height: 80vw;
+    }
+    .restaurantName{
+        font-size: 12vw;
+    }
+    .fontStar{
+        font-size: 3vw;
+        margin-left: 2vw;
+    }
+    .fontLocation,
+    .fontHours{
+        font-size: 3vw;
+        margin-left: 2vw;
+    }
+    .location,
+    .opinionNumber,
+    .opinionWord{
+        font-size: 3vw;
+        margin-left: 2vw;
+    }
+    .openHours{
+        font-size: 3vw;
+        margin-left: 1vw;
+    }
+    .btnShowMore{
+        font-size: 3vw;
+    }
+
+    .hotelsList{
+        height: 90vw;
+    }
+    
+    
+}
+/* @media screen and (max-width: 700px){
+    .listPlaces{
+        height: 150vw;
+    }
+    .firstPlaces,
+    .fourthPlaces{
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: space-around;
+    }
+    .secondPlaces,
+    .thirdPlaces,
+    .fifthPlaces{
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    .descriptionFirstPlaces,
+    .descriptionSecondPlaces,
+    .descriptionThirdPlaces,
+    .descriptionFourthPlaces,
+    .descriptionFifthPlaces{
+        height: 50%;
+        width: 100vw;
+        padding: 5%;
+    }
+    .numberPlaces{
+        top: 20%;
+        left: 20%;
+        font-size: 17vw;
+    }
+    .titlePlaces{
+        position: absolute;
+        top:20%;
+        left: 20%;
+        padding: 0;
+        font-size: 6vw;
+    }
+    .textPlaces{
+        position: relative;
+        top: 40%;
+        width: 100vw;
+        height: 30%;
+        font-size: 3vw; 
+        padding-bottom: 0; 
+    }
+    .textPlaces > span {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        width: 80%;
+    }
+    .readMoreContainer{
+        display: flex;
+        flex-direction: row;
+        width: 80%;
+        position: absolute;
+        top: 80%;
+        left: 13.5%;
+        font-size: 3vw;
+    }
+    .readMoreContainer:hover{
+        cursor: pointer;
+        font-size: 100%;
+        opacity: 1;
+        width: 80%;
+    }
+    
+    .iconReadMore{
+        position: static;
+        padding-top: 1%;
+        font-size: 3vw;
+    }
+    
+    .imgFirstPlacesCantainer,
+    .imgSecondPlacesContainer,
+    .imgThirdPlacesContainer,
+    .imgFourthPlacesContainer,
+    .imgFifthPlacesContainer{
+        height: 50%;
+        width: 100vw;
+    }
+    .imgFirstPlaces,
+    .imgSecondPlaces,
+    .imgFourthPlaces,
+    .imgFifthPlaces{
+        width: 60%;
+        height: 80%;
+    }
+    .imgThirdPlaces{
+        height: 35vw;
+        width: 35vw;
+    }
+    .ImgAmazingPlaces{
+        height: 30vw;
+    }
+} */
+ /* @media screen and (max-width: 900px){
+    .listPlaces{
+        height: 150vw;
+    }
+    .firstPlaces,
+    .fourthPlaces{
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: space-around;
+    }
+    .secondPlaces,
+    .thirdPlaces,
+    .fifthPlaces{
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    .descriptionFirstPlaces,
+    .descriptionSecondPlaces,
+    .descriptionThirdPlaces,
+    .descriptionFourthPlaces,
+    .descriptionFifthPlaces{
+        height: 50%;
+        width: 100vw;
+        padding: 5%;
+    }
+    .numberPlaces{
+        top: 20%;
+        left: 20%;
+        font-size: 17vw;
+    }
+    .titlePlaces{
+        position: absolute;
+        top:20%;
+        left: 20%;
+        padding: 0;
+        font-size: 6vw;
+    }
+    .textPlaces{
+        position: relative;
+        top: 40%;
+        width: 100vw;
+        height: 30%;
+        font-size: 3vw; 
+        padding-bottom: 0; 
+    }
+    .textPlaces > span {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        width: 80%;
+    }
+    .readMoreContainer{
+        display: flex;
+        flex-direction: row;
+        width: 80%;
+        position: absolute;
+        top: 80%;
+        left: 13.5%;
+        font-size: 3vw;
+    }
+    .readMoreContainer:hover{
+        cursor: pointer;
+        font-size: 100%;
+        opacity: 1;
+        width: 80%;
+    }
+    
+    .iconReadMore{
+        position: static;
+        padding-top: 1%;
+        font-size: 3vw;
+    }
+    
+    .imgFirstPlacesCantainer,
+    .imgSecondPlacesContainer,
+    .imgThirdPlacesContainer,
+    .imgFourthPlacesContainer,
+    .imgFifthPlacesContainer{
+        height: 50%;
+        width: 100vw;
+    }
+    .imgFirstPlaces,
+    .imgSecondPlaces,
+    .imgFourthPlaces,
+    .imgFifthPlaces{
+        width: 60%;
+        height: 80%;
+    }
+    .imgThirdPlaces{
+        height: 35vw;
+        width: 35vw;
+    }
+    .ImgAmazingPlaces{
+        height: 30vw;
+    }
+}  */
+
+
 
 
 
@@ -541,55 +970,4 @@ h2{
 /* https://www.zwidelcem.pl/wp-content/uploads/2013/09/dorota2.jpg */
 /* https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRw1aE4aM7qnLuiYlCJ5nz235W8ZifLQKqVaHiksvMXk5JOK2wc6mEMx6XqoyjlTM4yoGo&usqp=CAU */
 /* https://pierwszystopien.pl/wp-content/uploads/2023/02/pierwszy-stopien-restauracja-w-krakowie-kazimierz-wnetrze-3.jpg */
-
-/* <!-- HTML !-->
-<button class="button-30" role="button">Button 30</button> */
-
-/* CSS */
-/* .btnShowMore {
-    height: 60%;
-    width: 60%;
-    border-radius: 5px;
-    font-size: 1.5vw;
-  align-items: center;
-  appearance: none;
-  background-color: #FCFCFD;
-  border-radius: 4px;
-  border-width: 0;
-  box-shadow: rgba(45, 35, 66, 0.4) 0 2px 4px,rgba(45, 35, 66, 0.3) 0 7px 13px -3px,#D6D6E7 0 -3px 0 inset;
-  box-sizing: border-box;
-  color: #36395A;
-  cursor: pointer;
-  display: inline-flex;
-  justify-content: center;
-  line-height: 1;
-  list-style: none;
-  overflow: hidden;
-  padding-left: 16px;
-  padding-right: 16px;
-  text-align: left;
-  text-decoration: none;
-  transition: box-shadow .15s,transform .15s;
-  user-select: none;
-  -webkit-user-select: none;
-  touch-action: manipulation;
-  white-space: nowrap;
-  will-change: box-shadow,transform;
-} */
- 
-/* .btnShowMore:focus {
-  box-shadow: #D6D6E7 0 0 0 1.5px inset, rgba(45, 35, 66, 0.4) 0 2px 4px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
-}
-
-.btnShowMore:hover {
-  box-shadow: rgba(45, 35, 66, 0.4) 0 4px 8px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
-  transform: translateY(-2px);
-}
-
-.btnShowMore:active {
-  box-shadow: #D6D6E7 0 3px 7px inset;
-  transform: translateY(2px);
-} */
-
-
 
