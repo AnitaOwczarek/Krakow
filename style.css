@@ -8,8 +8,6 @@
 
 body{
     font-family: 'Roboto Condensed', sans-serif;
-    /* display: block; */
-    /* background-color: rgb(111, 110, 110); */
     overflow-x: hidden;
 }
 html{
@@ -251,7 +249,6 @@ h2{
 .imgFifthRestaurant,
 .imgSixthRestaurant{
     position: relative;
-    /* background-image: url(img/PodWawelem.jpg); */
     background-size: cover;
     background-position: center;
     height: 50%;
@@ -334,9 +331,6 @@ h2{
     border-radius: 5px;
     font-size: 1.5vw;
     color: black;
-    /* background-color: #878787; */
-        /* background-color: #878787; */
-    /* background-color:  rgb(68, 68, 68, 0.8); */
     background-color: whitesmoke;
     box-shadow: 2px 1px 10px #868484;
     border: none;
@@ -481,7 +475,7 @@ h2{
 
 
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 900px){
     .menu-items{
         align-items: center;
         flex-direction: column;
@@ -521,11 +515,7 @@ h2{
         cursor: pointer;
     }
 
-    
 
-
-}
-@media screen and (max-width: 900px){
     /* AmazingPlaceSection */
     .listPlaces{
         height: 90vw;
@@ -543,7 +533,6 @@ h2{
         align-items: center;
         justify-content: space-around;
     }
-
     .descriptionFirstPlaces,
     .descriptionSecondPlaces,
     .descriptionThirdPlaces,
@@ -588,6 +577,10 @@ h2{
         top: 70%;
         left: 13.5%;
         font-size: 1.5vw;
+    }
+    .readMoreContainerTwo,
+    .readMoreContainerFifth{
+        top: 75%;
     }
     .readMoreContainer:hover{
         cursor: pointer;
@@ -649,12 +642,10 @@ h2{
     .openHours{
         font-size: 2vw;
         margin-left: 1vw;
-    }
-    
+    } 
     .btnShowMore{
         font-size: 2vw;
     }
-
     .hotelsList{
         height: 60vw;
     }
@@ -691,8 +682,7 @@ h2{
     }
     .listPlaces{
         height: 150vw;
-    }
-  
+    }  
     .titlePlaces{
         font-size: 6vw;
     }
@@ -702,13 +692,11 @@ h2{
     .readMoreContainer{
         top: 80%;
         font-size: 3vw;
-    }
-       
+    }      
     .iconReadMore{
         padding-top: 1%;
         font-size: 3vw;
-    }
-    
+    }   
     .imgThirdPlaces{
         height: 35vw;
         width: 35vw;
@@ -748,212 +736,11 @@ h2{
     .btnShowMore{
         font-size: 3vw;
     }
-
     .hotelsList{
         height: 90vw;
     }
-    
-    
+       
 }
-/* @media screen and (max-width: 700px){
-    .listPlaces{
-        height: 150vw;
-    }
-    .firstPlaces,
-    .fourthPlaces{
-        flex-direction: column-reverse;
-        align-items: center;
-        justify-content: space-around;
-    }
-    .secondPlaces,
-    .thirdPlaces,
-    .fifthPlaces{
-        flex-direction: column;
-        align-items: center;
-        justify-content: space-around;
-    }
-
-    .descriptionFirstPlaces,
-    .descriptionSecondPlaces,
-    .descriptionThirdPlaces,
-    .descriptionFourthPlaces,
-    .descriptionFifthPlaces{
-        height: 50%;
-        width: 100vw;
-        padding: 5%;
-    }
-    .numberPlaces{
-        top: 20%;
-        left: 20%;
-        font-size: 17vw;
-    }
-    .titlePlaces{
-        position: absolute;
-        top:20%;
-        left: 20%;
-        padding: 0;
-        font-size: 6vw;
-    }
-    .textPlaces{
-        position: relative;
-        top: 40%;
-        width: 100vw;
-        height: 30%;
-        font-size: 3vw; 
-        padding-bottom: 0; 
-    }
-    .textPlaces > span {
-        position: absolute;
-        left: 50%;
-        top: 50%;
-        transform: translate(-50%, -50%);
-        width: 80%;
-    }
-    .readMoreContainer{
-        display: flex;
-        flex-direction: row;
-        width: 80%;
-        position: absolute;
-        top: 80%;
-        left: 13.5%;
-        font-size: 3vw;
-    }
-    .readMoreContainer:hover{
-        cursor: pointer;
-        font-size: 100%;
-        opacity: 1;
-        width: 80%;
-    }
-    
-    .iconReadMore{
-        position: static;
-        padding-top: 1%;
-        font-size: 3vw;
-    }
-    
-    .imgFirstPlacesCantainer,
-    .imgSecondPlacesContainer,
-    .imgThirdPlacesContainer,
-    .imgFourthPlacesContainer,
-    .imgFifthPlacesContainer{
-        height: 50%;
-        width: 100vw;
-    }
-    .imgFirstPlaces,
-    .imgSecondPlaces,
-    .imgFourthPlaces,
-    .imgFifthPlaces{
-        width: 60%;
-        height: 80%;
-    }
-    .imgThirdPlaces{
-        height: 35vw;
-        width: 35vw;
-    }
-    .ImgAmazingPlaces{
-        height: 30vw;
-    }
-} */
- /* @media screen and (max-width: 900px){
-    .listPlaces{
-        height: 150vw;
-    }
-    .firstPlaces,
-    .fourthPlaces{
-        flex-direction: column-reverse;
-        align-items: center;
-        justify-content: space-around;
-    }
-    .secondPlaces,
-    .thirdPlaces,
-    .fifthPlaces{
-        flex-direction: column;
-        align-items: center;
-        justify-content: space-around;
-    }
-
-    .descriptionFirstPlaces,
-    .descriptionSecondPlaces,
-    .descriptionThirdPlaces,
-    .descriptionFourthPlaces,
-    .descriptionFifthPlaces{
-        height: 50%;
-        width: 100vw;
-        padding: 5%;
-    }
-    .numberPlaces{
-        top: 20%;
-        left: 20%;
-        font-size: 17vw;
-    }
-    .titlePlaces{
-        position: absolute;
-        top:20%;
-        left: 20%;
-        padding: 0;
-        font-size: 6vw;
-    }
-    .textPlaces{
-        position: relative;
-        top: 40%;
-        width: 100vw;
-        height: 30%;
-        font-size: 3vw; 
-        padding-bottom: 0; 
-    }
-    .textPlaces > span {
-        position: absolute;
-        left: 50%;
-        top: 50%;
-        transform: translate(-50%, -50%);
-        width: 80%;
-    }
-    .readMoreContainer{
-        display: flex;
-        flex-direction: row;
-        width: 80%;
-        position: absolute;
-        top: 80%;
-        left: 13.5%;
-        font-size: 3vw;
-    }
-    .readMoreContainer:hover{
-        cursor: pointer;
-        font-size: 100%;
-        opacity: 1;
-        width: 80%;
-    }
-    
-    .iconReadMore{
-        position: static;
-        padding-top: 1%;
-        font-size: 3vw;
-    }
-    
-    .imgFirstPlacesCantainer,
-    .imgSecondPlacesContainer,
-    .imgThirdPlacesContainer,
-    .imgFourthPlacesContainer,
-    .imgFifthPlacesContainer{
-        height: 50%;
-        width: 100vw;
-    }
-    .imgFirstPlaces,
-    .imgSecondPlaces,
-    .imgFourthPlaces,
-    .imgFifthPlaces{
-        width: 60%;
-        height: 80%;
-    }
-    .imgThirdPlaces{
-        height: 35vw;
-        width: 35vw;
-    }
-    .ImgAmazingPlaces{
-        height: 30vw;
-    }
-}  */
-
 
 
 

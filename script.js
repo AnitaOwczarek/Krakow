@@ -10,10 +10,23 @@ const imgHotel1 = document.querySelector('.showHotel1');
 const imgHotel2 = document.querySelector('.showHotel2');
 const imgHotel3 = document.querySelector('.showHotel3');
 const imgHotel4 = document.querySelector('.showHotel4');
+const menuLink = document.querySelectorAll('.menu-link');
+
 
 var hotelStatus = 2;
 var hotelTimer = 4000;
 
+function deleteMenuViwe(){
+    nav.classList.remove('menuHamburger');
+    nav.classList.remove('menuHamburgerHeight');
+    containerNav.classList.add('elementNavVisibility');
+    icons.forEach(icon => {
+        icon.classList.toggle('elementVisibility');
+    });
+    ulMenuItems.classList.add('elementVisibility');
+    body.classList.remove('windowSrollY');
+
+}
 
 function changeHotelRight(){
     if(imgHotel1.classList.contains('zIndeksHotel')){
@@ -55,6 +68,7 @@ function changeHotelLeft(){
 }
 
 
+
 function changeMenuBackground(){
     if(window.scrollY > 50){
         nav.classList.add('menuHamburger')
@@ -77,6 +91,9 @@ function showHamburgerMenu() {
     
 }
 
+menuLink.forEach(link => {
+    link.addEventListener('click', deleteMenuViwe)
+});
 iconNext2.addEventListener('click', changeHotelRight);
 iconNext1.addEventListener('click', changeHotelLeft)
 
