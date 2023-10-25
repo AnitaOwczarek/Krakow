@@ -9,9 +9,9 @@ Krakow Explorer is a simple one-page website project that showcases interesting 
 - License
 
 ## Technologies
-HTML <br>
-CSS <br>
-JS <br>
+- HTML <br>
+- CSS <br>
+- JS <br>
 
 ## Features
 - Displaying a list of interesting places to visit. <br>
@@ -33,9 +33,9 @@ To run the project on your local machine, follow these steps:
 ## Directory Structure
 The project's directory structure is as follows:
 
-index.html: The main HTML file of the homepage. <br>
-css/: Contains CSS stylesheets. <br>
-js/: Contains JavaScript scripts. <br>
+- index.html: The main HTML file of the homepage. <br>
+- css/: Contains CSS stylesheets. <br>
+- js/: Contains JavaScript scripts. <br>
 
 ## License
 This project is available under the MIT License - detailed information can be found in the LICENSE.md file.
