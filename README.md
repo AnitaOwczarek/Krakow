@@ -13,10 +13,10 @@ Krakow Explorer is a simple one-page website project that showcases interesting 
 * JS 
 
 ## Features
-- Displaying a list of interesting places to visit. <br>
-- Providing information about restaurants, including reviews and addresses. <br>
-- Simple and clear user interface. <br>
-- Easy navigation on the one-page website.
+* Displaying a list of interesting places to visit. 
+* Providing information about restaurants, including reviews and addresses. 
+* Simple and clear user interface. 
+* Easy navigation on the one-page website.
 
 ## How to Run the Project
 To run the project on your local machine, follow these steps:
@@ -32,7 +32,7 @@ To run the project on your local machine, follow these steps:
 ## Directory Structure
 The project's directory structure is as follows:
 
-- index.html: The main HTML file of the homepage. <br>
-- css/: Contains CSS stylesheets. <br>
-- js/: Contains JavaScript scripts. <br>
+* index.html: The main HTML file of the homepage. 
+* css/: Contains CSS stylesheets. 
+* js/: Contains JavaScript scripts. 
 
