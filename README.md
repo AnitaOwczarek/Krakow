@@ -2,11 +2,11 @@
 Krakow Explorer is a simple one-page website project that showcases interesting places to visit and restaurants to try in Krakow. This website was created using HTML, CSS, and JavaScript, and aims to provide users with information about attractions in Krakow.
 
 ## Table of Contents
--Technologies <br>
--Features
--How to Run the Project
--Directory Structure
--License
+- Technologies <br>
+- Features
+- How to Run the Project
+- Directory Structure
+- License
 
 ## Technologies
 HTML
